@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #06283D;
+  --secondary-color: #1363DF;
+    --tertiary-color: rgba(0, 0, 0, 0.1);
+  --text-color: #fff;
+  --placeholder-color: rgb(82, 80, 80);
+  --light-gery: #f5f5f5;
+  --pending-color: #b7e4ec;
+  --pending-text-color: #0c6047;
+  --error-color: #ffc1c5;
+  --error-text-color: #631920;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--text-color);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* COPYRIGHT */
+
+.copyright{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--main-padding);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.copyright p a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.wrapper {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    width: 800px;
+}
+
+
+.wrapper form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+form .url-link{
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    font-size: 22px;
+    color: var(--placeholder-color);
+    transition: all 0.2s ease;
+}
+
+form input:valid ~ .url-link{
+    color: var(--primary-color);
+}
+
+form input{
+    width: 100%;
+    height: 100%;
+    padding: 0 120px 0 45px;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    caret-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+form input::placeholder{
+    color: var(--placeholder-color);
+    transition: all 0.2s ease;
+}
+
+form input:focus::placeholder{
+    color: #646464;
+}
+
+form input:valid{
+    border-color: var(--primary-color);
+}
+
+form button{
+    position: absolute;
+    right: 6px;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+form input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*--------------------- Clicks and URLs are ------------------------*/
+.wrapper .count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding-right: 5px;
+}
+
+.count span{
+    font-size: 17px;
+}
+
+.count span span{
+    font-weight: 500;
+}
+
+.count a{
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    font-size: 17px;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+.wrapper .urls-area{
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-bottom: 5px;    
+    max-height: 446px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.urls-area::-webkit-scrollbar{
+    width: 0px;
+}
+
+.urls-area :is(.title, .data){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.urls-area li{
+    list-style: none;
+    width: 100%;
+    border-right: 1px solid var(--light-gery);
+}
+
+.urls-area .title li{
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+}
+
+.urls-area .data li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    word-break: break-all;
+}
+
+.urls-area .data li a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.2s ease;
+}
+
+.urls-area .data li:last-child a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.urls-area li:last-child{
+    border-right: 0;
+}
+
+.urls-area .data:nth-child(odd){
+    background-color: var(--tertiary-color);
+}
+
+.urls-area .data li a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.urls-area li:nth-child(1){
+    max-width: 30%;
+}
+
+.urls-area li:nth-child(2){
+    max-width: 45%;
+}
+
+.urls-area li:nth-child(3){
+    max-width: 11%;
+}
+
+.urls-area li:nth-child(4){
+    max-width: 14%;
+}
+
+/* --------------------- popup box ------------------------*/
+
+.blur-effect{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.01);
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+.popup-box{
+    position: absolute;
+    background-color: var(--text-color);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 8px 5px 10px rgba(0, 0, 0, 0.1);
+    top: 50%;
+    left: 50%;
+    max-width: 480px;
+    width: 100%;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+}
+
+.popup-box.show{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-box .info-box{
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.info-box.error{
+    color: var(--error-text-color);
+    background-color: var(--error-color);
+}
+
+.popup-box form{
+    position: relative;
+    margin-top: 10px;
+}
+
+.popup-box form label{
+    font-size: 18px;
+    color: rgb(22, 21, 21);
+}
+
+.popup-box form .copy-icon{ 
+    position: absolute;
+    right: 10px;
+    margin-top: 10px; 
+    color: rgb(22, 21, 21);
+    z-index: 1;
+    top: 50%;
+    cursor: pointer;    
+    font-size: 20px;
+    transition: all 0.2s ease;
+    transform: translateY(-115%);
+}
+
+form .copy-icon:hover{
+    color: var(--primary-color);
+}
+
+.popup-box form input{
+    height: 45px;
+    border: 2px solid var(--secondary-color);
+    padding: 0 35px 0 15px;
+    margin-top: 8px;
+}
+
+.popup-box form button{
+    position: relative;
+    right: 0;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 540px){
+    .wrapper .urls-area{
+        overflow-x: scroll;
+    }
+
+    .count a{
+        font-size: 14px;
+    }
+}
+
+
+
+

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg-color: #3b4ad8;
+    --bg-color-2: #8c99d4;
+    --card-color: rgb(238, 238, 238);
+    --border-radius: 10px;
+    --main-padding: 20px;
+    --text-color: #fff;
+    --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    --main-margin: 20px;
+    --transition-time: all 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    max-width: 598px;
+    min-width: 598px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: var(--border-radius);
+    padding: var(--main-padding);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    margin: var(--main-margin);
+}
+
+.main .header h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.main .container .content .quote p {
+    text-align: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.main .container .quote-icon {
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.main .container .quote-icon-left {
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main .container .quote-icon-right {
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.main .container .author {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 20px;
+    display: flex;
+    margin-top: 12px;
+    justify-content: flex-end;
+}
+
+.main .container .content {
+    padding-left: var(--main-padding);
+    margin-top: 10px;
+}
+
+.main .container .btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .container .btns .tools-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .container .btns .tools-btns .btn-app:not(:last-child) {
+    margin-right: var(--main-margin);
+}
+
+.main .container .btns .tools-btns .btn-app {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 12px;
+    border: 1px solid var(--bg-color);
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-time);
+}
+
+.main .container .btns .new-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .btns .new-btn .btn-app {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 12px 18px;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: var(--transition-time);
+}
+
+.main .container .btns .new-btn .btn-app.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.main .container .btns .btn-app:hover {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.main .container .btns .new-btn .btn-app:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.main .container .btns .new-btn .btn-app ion-icon {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+/* COLOR PICKER */
+
+.color-palette {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: var(--main-margin);
+    right: 0;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 30px;
+    padding: var(--main-padding) 16px;
+    text-align: center;
+}
+
+.color-palette .theme-color{
+    background-color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.color-palette .theme-color:not(:last-child){
+    margin-bottom: 10px;
+}
+
+/* COPYRIGHT */
+
+.copyright{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--main-padding);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.copyright p a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* for small screens */
+
+@media screen and (max-width: 797px) {
+    .color-palette{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        padding: 0;
+        margin: 0;
+        width: 400px;
+        margin-bottom: 16px;
+    }
+
+    .color-palette .theme-color{
+        margin-top: 10px;
+    }
+
+    .color-palette .theme-color:not(:last-child){
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        max-width: 90%;
+        min-width: 90%;
+    }
+
+    .main .container .content .quote p {
+        font-size: 18px;
+    }
+
+    .main .container .author {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .main .container .btns .new-btn .btn-app {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .main .container .btns .tools-btns .btn-app:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .main .container .btns .tools-btns .btn-app {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .color-palette{
+        width: 300px;
+        padding: 0 10px;
+        bottom: 10px;
+        margin-top: 16px;
+    }
+
+    .color-palette .theme-color{
+        width: 24px;
+        height: 24px;
+    }
+
+    .color-palette .theme-color:not(:last-child){
+        margin-right: 10px;
+    }
+}
+
+
