@@ -9,11 +9,19 @@
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <!-- Css -->
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/intro.css">
     <link rel="stylesheet" href="style/theme_popup.css">
     <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/contact.css">
     <!-- Feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-    <title>All in one website</title>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <title>Tooly | Multi tools web app</title>
 </head>
 
 <body>
@@ -41,6 +49,37 @@
                 </ul>
             </nav>
         </header>
+
+        <div class="intro-container">
+            <!-- Intro content -->
+            <div class="intro-text">
+                <h1>Tooly<span>.</span></h1>
+                <p>
+                    A multi tools web app that you can use to do many things.
+                </p>
+                <a href="#projects" class="btn">
+                    <span>Get Started</span>
+                    <i data-feather="arrow-right"></i>
+                </a>
+            </div>
+            <div class="popular-projects">
+                <div class="swiper">
+                    <div class="swiper-slide">1</div>
+                    <div class="swiper-slide">2</div>
+                    <div class="swiper-slide">3</div>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
     </section>
 
     <!-- about -->
@@ -54,7 +93,7 @@
 
     <!-- Theme Popup -->
     <?php include 'components/theme_popup.html'; ?>
-    
+
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -63,6 +102,27 @@
     <script src="js/main.js"></script>
     <script>
         feather.replace();
+
+        // Swiper
+        var swiper = new Swiper('.swiper', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
     </script>
 </body>
 
