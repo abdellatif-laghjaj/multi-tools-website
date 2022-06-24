@@ -74,8 +74,9 @@ header nav ul .nav-link{
     letter-spacing: 2px;
 }
 
-header nav ul .nav-link a{
+header nav ul .nav-link a, .theme-icon{
     color: var(--text-color);
+    cursor: pointer;
     text-decoration: none;
     padding: 4px 8px;
     border-radius: 4px;

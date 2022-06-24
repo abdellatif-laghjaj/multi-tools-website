@@ -6,6 +6,7 @@
     z-index:9999;
     top:0;
     left:0;
+    display: none;
 }
 
 .theme-popup .theme-popup-inner{
@@ -26,6 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.theme-popup-header .close-settings-btn{
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .theme-popup-inner .theme-popup-body{
@@ -68,11 +74,14 @@
 .theme-mode .theme-item{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--light-dark);
     color: var(--text-color);
-    padding: 6px 12px;
+    padding: 10px 12px;
     border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+    transition: var(--transition);
 }
 
 .theme-item:not(:last-child){
