@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
 
 :root {
-    --bg-color: #f5f5f5;
+    --bg-color: #8d98ffe3;
     --primary-color: #4959e6;
     --secondary-color: #f8a3a3;
     --text-color: #fff;
+    --dark-color: #000;
 }
 
 *{
@@ -18,7 +19,60 @@
     font-family: 'Poppins', sans-serif;
 }
 
+*::selection {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
 body{
     background: var(--bg-color);
-    height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 800px;
+    height: 70px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 999px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 16px;
+    z-index: 1;
+}
+
+header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin:  auto 0;
+}
+
+header nav ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul li a{
+    color: var(--text-color);
+    text-decoration: none;
 }
