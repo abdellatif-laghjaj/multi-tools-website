@@ -28,6 +28,11 @@ html {
   border: 2px solid var(--text-color);
 }
 
+body::selection{
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
 * {
   margin: 0;
   padding: 0;
