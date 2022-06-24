@@ -1,4 +1,4 @@
 #about, #projects, #contact {
-    background-color: aqua;
+    background-color: var(--bg-color);
     height: 100vh;
 }

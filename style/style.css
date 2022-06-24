@@ -28,11 +28,6 @@ html {
   border: 2px solid var(--text-color);
 }
 
-body::selection{
-    background: var(--primary-color);
-    color: var(--text-color);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +46,8 @@ body::selection{
 
 body {
   background: var(--bg-color);
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
 }
 
 #intro {
@@ -85,7 +82,7 @@ header .logo {
 }
 
 .logo span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 30px;
 }
 

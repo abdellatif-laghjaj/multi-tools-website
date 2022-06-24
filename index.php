@@ -30,6 +30,9 @@
                         <a href="#about">About</a>
                     </li>
                     <li class="nav-link">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-link">
                         <a href="#contact">Contact</a>
                     </li>
                     <li class="nav-link theme-icon">
@@ -41,12 +44,12 @@
     </section>
 
     <!-- about -->
-    <?php include './components/about.html'; ?>
+    <?php include 'components/about.html'; ?>
 
-    <!-- about -->
+    <!-- projects -->
     <?php include 'components/projects.html'; ?>
 
-    <!-- about -->
+    <!-- contact -->
     <?php include 'components/contact.html'; ?>
 
     <!-- Theme Popup -->
