@@ -1,0 +1,22 @@
+{
+  "name": "multi-tools-website",
+  "version": "1.0.0",
+  "description": "multi tools website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdellatif-laghjaj/multi-tools-website.git"
+  },
+  "author": "Abdellatif Laghjaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdellatif-laghjaj/multi-tools-website/issues"
+  },
+  "homepage": "https://github.com/abdellatif-laghjaj/multi-tools-website#readme",
+  "dependencies": {
+    "fullpage.js": "^4.0.9"
+  }
+}

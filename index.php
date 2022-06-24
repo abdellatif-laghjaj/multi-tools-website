@@ -17,78 +17,54 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <section class="intro" id="intro">
-        <header>
-            <a href="" class="logo">Tooly<span>.</span></a>
-            <nav>
-                <ul>
-                    <li class="nav-link active-link">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-link theme-icon">
-                        <i data-feather="settings"></i>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </section>
+    <div class="main">
+        <!-- Header -->
+        <section class="intro" id="intro">
+            <header>
+                <a href="" class="logo">Tooly<span>.</span></a>
+                <nav>
+                    <ul>
+                        <li class="nav-link active-link">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-link theme-icon">
+                            <i data-feather="settings"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
 
-    <!-- about -->
-    <?php include 'components/about.html'; ?>
+        <!-- about -->
+        <?php include 'components/about.html'; ?>
 
-    <!-- projects -->
-    <?php include 'components/projects.html'; ?>
+        <!-- projects -->
+        <?php include 'components/projects.html'; ?>
 
-    <!-- contact -->
-    <?php include 'components/contact.html'; ?>
+        <!-- contact -->
+        <?php include 'components/contact.html'; ?>
 
-    <!-- Theme Popup -->
-    <div class="theme-popup">
-        <div class="theme-popup-inner">
-            <div class="theme-popup-header">
-                <h3>Customize your theme</h3>
-                <div class="close-settings-btn">
-                    <i data-feather="x"></i>
-                </div>
-            </div>
-            <div class="theme-popup-body">
-                <div class="color-picker">
-                    <span class="color-item"></span>
-                    <span class="color-item"></span>
-                    <span class="color-item"></span>
-                    <span class="color-item"></span>
-                    <span class="color-item"></span>
-                </div>
-                <div class="theme-mode">
-                    <div class="theme-item">
-                        <i data-feather="sun"></i>
-                        <span>Light</span>
-                    </div>
-                    <div class="theme-item dark-mode">
-                        <i data-feather="moon"></i>
-                        <span>Dark</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Theme Popup -->
+        <?php include 'components/theme_popup.html'; ?>
     </div>
 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- JS -->
     <script src="js/theme_script.js"></script>
     <script src="js/main.js"></script>
     <script>
-        feather.replace()
+        feather.replace();
     </script>
 </body>
 
