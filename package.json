@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/abdellatif-laghjaj/multi-tools-website/issues"
   },
-  "homepage": "https://github.com/abdellatif-laghjaj/multi-tools-website#readme",
-  "dependencies": {
-    "fullpage.js": "^4.0.9"
-  }
+  "homepage": "https://github.com/abdellatif-laghjaj/multi-tools-website#readme"
 }
