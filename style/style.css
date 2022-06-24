@@ -76,13 +76,14 @@ header nav ul .nav-link{
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding: 4px 8px;
+    transition: var(--transition);
 }
 
 header nav ul .nav-link a, .theme-icon{
     color: var(--text-color);
     cursor: pointer;
     text-decoration: none;
-    padding: 4px 8px;
     border-radius: 4px;
     transition: var(--transition);
 }
@@ -92,7 +93,7 @@ header nav ul .nav-link a, .theme-icon{
 }
 
 .nav-link a:hover{
-    background: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .nav-link .settings-icon:hover{

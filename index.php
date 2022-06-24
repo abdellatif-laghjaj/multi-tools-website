@@ -20,13 +20,13 @@
         <nav>
             <ul>
                 <li class="nav-link active-link">
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li class="nav-link">
-                    <a href="">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="nav-link">
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li class="nav-link theme-icon">
                     <i data-feather="settings"></i>
@@ -35,6 +35,14 @@
         </nav>
     </header>
 
+    <!-- about -->
+    <?php include 'components/about.html'; ?>
+
+    <!-- about -->
+    <?php include 'components/projects.html'; ?>
+
+    <!-- about -->
+    <?php include 'components/contact.html'; ?>
 
     <!-- Theme Popup -->
     <div class="theme-popup">

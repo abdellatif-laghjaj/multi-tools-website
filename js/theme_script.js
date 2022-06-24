@@ -3,6 +3,7 @@ const closeSettingsBtn = document.querySelector('.close-settings-btn');
 const themePopup = document.querySelector('.theme-popup');
 const colorItems = document.querySelectorAll('.color-item');
 const themeModeBtns = document.querySelectorAll('.theme-item');
+const navLinks = document.querySelectorAll('.nav-link');
 
 settingsBtn.addEventListener('click', showThemeSettings);
 closeSettingsBtn.addEventListener('click', hideThemeSettings);
@@ -74,3 +75,13 @@ function loadTheme() {
     document.documentElement.style.setProperty('--text-color', localStorage.getItem('theme-text-color'));
     document.documentElement.style.setProperty('--secondary-color', localStorage.getItem('theme-secondary-color'));
 }
+
+//add active class to the clicked link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.forEach(link => {
+            link.classList.remove('active-link');
+        });
+        link.classList.add('active-link');
+    })
+});
