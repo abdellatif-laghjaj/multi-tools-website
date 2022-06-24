@@ -17,46 +17,44 @@
 </head>
 
 <body>
-    <div class="main">
-        <!-- Header -->
-        <section class="intro" id="intro">
-            <header>
-                <a href="" class="logo">Tooly<span>.</span></a>
-                <nav>
-                    <ul>
-                        <li class="nav-link active-link">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-link theme-icon">
-                            <i data-feather="settings"></i>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </section>
+    <!-- Header -->
+    <section class="intro" id="intro">
+        <header>
+            <a href="" class="logo">Tooly<span>.</span></a>
+            <nav>
+                <ul>
+                    <li class="nav-link active-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-link theme-icon">
+                        <i data-feather="settings"></i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
 
-        <!-- about -->
-        <?php include 'components/about.html'; ?>
+    <!-- about -->
+    <?php include 'components/about.html'; ?>
 
-        <!-- projects -->
-        <?php include 'components/projects.html'; ?>
+    <!-- projects -->
+    <?php include 'components/projects.html'; ?>
 
-        <!-- contact -->
-        <?php include 'components/contact.html'; ?>
+    <!-- contact -->
+    <?php include 'components/contact.html'; ?>
 
-        <!-- Theme Popup -->
-        <?php include 'components/theme_popup.html'; ?>
-    </div>
-
+    <!-- Theme Popup -->
+    <?php include 'components/theme_popup.html'; ?>
+    
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
