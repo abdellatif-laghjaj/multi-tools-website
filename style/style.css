@@ -6,6 +6,7 @@
     --secondary-color: #f8a3a3;
     --text-color: #fff;
     --dark-color: #000;
+    --transition: all 0.3s ease-in-out;
 }
 
 *{
@@ -51,7 +52,7 @@ header{
 header .logo{
     font-size: 30px;
     font-weight: bold;
-    color: var(--dark-color);
+    color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -64,15 +65,32 @@ header nav ul{
     margin:  auto 0;
 }
 
-header nav ul li{
+header nav ul .nav-link{
     list-style: none;
-    margin-left: 20px;
+    margin-left: 16px;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-header nav ul li a{
+header nav ul .nav-link a{
     color: var(--text-color);
     text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.nav-link:last-child{
+    
+}
+
+.nav-link a:hover{
+    background: var(--secondary-color);
+}
+
+.nav-link.active-link{
+    background: var(--secondary-color);
+    padding: 4px 8px;
+    border-radius: 4px;
 }
