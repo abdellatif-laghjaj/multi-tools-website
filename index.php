@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,34 +10,38 @@
     <!-- Css -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/theme_popup.css">
+    <link rel="stylesheet" href="style/about.css">
     <!-- Feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     <title>All in one website</title>
 </head>
+
 <body>
     <!-- Header -->
-    <header>
-        <a href="" class="logo">Tooly<span>.</span></a>
-        <nav>
-            <ul>
-                <li class="nav-link active-link">
-                    <a href="#">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#about">About</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#contact">Contact</a>
-                </li>
-                <li class="nav-link theme-icon">
-                    <i data-feather="settings"></i>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <section class="intro" id="intro">
+        <header>
+            <a href="" class="logo">Tooly<span>.</span></a>
+            <nav>
+                <ul>
+                    <li class="nav-link active-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-link theme-icon">
+                        <i data-feather="settings"></i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
 
     <!-- about -->
-    <?php include 'components/about.html'; ?>
+    <?php include './components/about.html'; ?>
 
     <!-- about -->
     <?php include 'components/projects.html'; ?>
@@ -83,4 +88,5 @@
         feather.replace()
     </script>
 </body>
+
 </html>

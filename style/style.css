@@ -1,107 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap");
 
 :root {
-    --bg-color: #4657eee3;
-    --primary-color: #4959e6;
-    --secondary-color: #446df1;
-    --text-color: #fff;
-    --dark-color: #000;
-    --light-dark: rgb(18, 19, 19);
-    --transition: all 0.3s ease-in-out;
+  --bg-color: #4657eee3;
+  --primary-color: #4959e6;
+  --secondary-color: #446df1;
+  --text-color: #fff;
+  --dark-color: #000;
+  --light-dark: rgb(18, 19, 19);
+  --transition: all 0.3s ease-in-out;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: 2px solid var(--text-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 
 *::selection {
-    background: var(--secondary-color);
-    color: var(--text-color);
+  background: var(--secondary-color);
+  color: var(--text-color);
 }
 
-body{
-    background: var(--bg-color);
+body {
+  background: var(--bg-color);
 }
 
-header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 800px;
-    height: 70px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
-    border-radius: 999px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 16px;
-    z-index: 1;
+#intro {
+  height: 100vh;
 }
 
-header .logo{
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--text-color);
-    letter-spacing: 2px;
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 16px;
+  z-index: 1;
 }
 
-.logo span{
-    color: var(--primary-color);
-    font-size: 30px;
+header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-color);
+  letter-spacing: 2px;
 }
 
-header nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    margin:  auto 0;
+.logo span {
+  color: var(--primary-color);
+  font-size: 30px;
 }
 
-header nav ul .nav-link{
-    list-style: none;
-    margin-left: 16px;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 4px 8px;
-    transition: var(--transition);
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: auto 0;
 }
 
-header nav ul .nav-link a, .theme-icon{
-    color: var(--text-color);
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: var(--transition);
+header nav ul .nav-link {
+  list-style: none;
+  margin-left: 16px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 4px 8px;
+  transition: var(--transition);
 }
 
-.nav-link:last-child{
-    margin-top: 6px;
+header nav ul .nav-link a,
+.theme-icon {
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: var(--transition);
 }
 
-.nav-link a:hover{
-    color: var(--text-color);
+.nav-link:last-child {
+  margin-top: 6px;
 }
 
-.nav-link .settings-icon:hover{
-    background: transparent;
+.nav-link a:hover {
+  color: var(--text-color);
 }
 
-.nav-link.active-link:not(:last-child){
-    background: var(--secondary-color);
-    padding: 4px 8px;
-    border-radius: 4px;
+.nav-link .settings-icon:hover {
+  background: transparent;
+}
+
+.nav-link.active-link:not(:last-child) {
+  background: var(--secondary-color);
+  padding: 4px 8px;
+  border-radius: 4px;
 }
