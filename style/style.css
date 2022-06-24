@@ -48,6 +48,7 @@ body {
   background: var(--bg-color);
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
+  overflow-x: hidden;
 }
 
 #intro {
