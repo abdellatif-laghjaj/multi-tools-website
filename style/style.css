@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
 
 :root {
-    --bg-color: #8d98ffe3;
+    --bg-color: #4657eee3;
     --primary-color: #4959e6;
-    --secondary-color: #f8a3a3;
+    --secondary-color: #446df1;
     --text-color: #fff;
     --dark-color: #000;
     --transition: all 0.3s ease-in-out;
@@ -82,14 +82,18 @@ header nav ul .nav-link a{
 }
 
 .nav-link:last-child{
-    
+    margin-top: 6px;
 }
 
 .nav-link a:hover{
     background: var(--secondary-color);
 }
 
-.nav-link.active-link{
+.nav-link .settings-icon:hover{
+    background: transparent;
+}
+
+.nav-link.active-link:not(:last-child){
     background: var(--secondary-color);
     padding: 4px 8px;
     border-radius: 4px;
