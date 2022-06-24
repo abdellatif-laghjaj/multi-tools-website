@@ -71,6 +71,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   margin: 16px;
+  user-select: none;
   z-index: 1;
 }
 
