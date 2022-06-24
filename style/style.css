@@ -53,9 +53,13 @@ header{
 header .logo{
     font-size: 30px;
     font-weight: bold;
-    color: var(--secondary-color);
-    text-transform: uppercase;
+    color: var(--text-color);
     letter-spacing: 2px;
+}
+
+.logo span{
+    color: var(--primary-color);
+    font-size: 30px;
 }
 
 header nav ul{
