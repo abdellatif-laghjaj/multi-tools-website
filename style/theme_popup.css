@@ -65,3 +65,16 @@
     margin: 8px 0;
 }
 
+.theme-mode .theme-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-dark);
+    color: var(--text-color);
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.theme-item:not(:last-child){
+    margin-right: 16px;
+}

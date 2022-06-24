@@ -6,6 +6,7 @@
     --secondary-color: #446df1;
     --text-color: #fff;
     --dark-color: #000;
+    --light-dark: rgb(18, 19, 19);
     --transition: all 0.3s ease-in-out;
 }
 
