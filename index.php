@@ -70,6 +70,9 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" is-popular="true" data-category="web">
                         <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                        <span class="popular">
+                            <i data-feather="zap"></i>
+                        </span>
                         <div class="content">
                             <h3 class="title">Project</h3>
                             <div class="techs-used">

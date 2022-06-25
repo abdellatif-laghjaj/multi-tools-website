@@ -8,6 +8,9 @@ PROJECTS_DATA.filter(project => project.isPopular).forEach(project => {
     swiperSlide.classList.add('swiper-slide');
     swiperSlide.innerHTML = `
             <img src="${project.image}" alt="">
+            <span class="popular">
+                            <i data-feather="zap"></i>
+            </span>
             <div class="content">
                 <h3 class="title">${project.title}</h3>
                 <div class="techs-used">

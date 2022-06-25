@@ -89,6 +89,19 @@
   opacity: 0;
 }
 
+.swiper-slide .popular{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff5226;
+  padding: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px 0px 14px 0px;
+  transition: var(--transition);
+}
+
 .content h3{
   font-size: 54px;
   font-weight: bold;
@@ -129,7 +142,7 @@
   margin-right: 8px;
 }
 
-.swiper-slide .content:hover{
+.content:hover{
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.6);
 }
