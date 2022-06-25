@@ -77,10 +77,10 @@
                                 <span>CSS</span>
                                 <span>JS</span>
                             </div>
-                            <button class="project-link">
+                            <a href="#" class="project-link" target="_blank">
                                 <span>View Project</span>
                                 <i data-feather="arrow-right"></i>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -107,7 +107,7 @@
   margin-right: 8px;
 }
 
-.content button{
+.content a{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -125,7 +125,7 @@
   transition: var(--transition);
 }
 
-.content button span{
+.content a span{
   margin-right: 8px;
 }
 
