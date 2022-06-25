@@ -82,13 +82,19 @@ color:  var(--text-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--secondary-color);
-  color: var(--text-color);
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
   padding: 10px 12px;
   border-radius: 6px;
   cursor: pointer;
   width: 100px;
   transition: var(--transition);
+}
+
+.theme-mode .dark-mode {
+  background-color: #000;
+  color: #fff;
 }
 
 .theme-item:not(:last-child) {
