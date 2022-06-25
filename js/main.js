@@ -9,7 +9,7 @@ PROJECTS_DATA.filter(project => project.isPopular).forEach(project => {
     swiperSlide.innerHTML = `
             <img src="${project.image}" alt="">
             <span class="popular">
-                <ion-icon name="flame-sharp"></ion-icon>
+                <i data-feather="star"></i>
             </span>
             <div class="content">
                 <h3 class="title">${project.title}</h3>

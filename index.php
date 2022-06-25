@@ -17,10 +17,6 @@
     <!-- Feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <!--- Iion icons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -75,7 +71,7 @@
                     <div class="swiper-slide" is-popular="true" data-category="web">
                         <img src="https://picsum.photos/seed/picsum/200/300" alt="">
                         <span class="popular">
-                            <ion-icon name="flame-sharp"></ion-icon>
+                            <i data-feather="star"></i>
                         </span>
                         <div class="content">
                             <h3 class="title">Project</h3>
