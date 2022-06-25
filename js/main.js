@@ -11,9 +11,7 @@ PROJECTS_DATA.filter(project => project.isPopular).forEach(project => {
             <div class="content">
                 <h3 class="title">${project.title}</h3>
                 <div class="techs-used">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
+                    ${project.tech.map(tech => `<span>${tech}</span>`).join('')}
                 </div>
                 <a href="${project.link}" class="project-link" target="_blank">
                     <span>View Project</span>
