@@ -58,8 +58,8 @@ body {
 
 .blob-anim{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -300px;
+  left: -400px;
   width: 100%;
 }
 

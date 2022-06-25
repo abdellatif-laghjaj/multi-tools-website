@@ -46,8 +46,8 @@ for (let i = 0; i < primaryColors.length; i++) {
 function changeColor(color, index) {
     document.documentElement.style.setProperty('--bg-color', color.target.style.backgroundColor);
     document.documentElement.style.setProperty('--secondary-color', secondaryColors[index]);
-    blob1.style.fill = secondaryColors[index];
-    blob2.style.fill = secondaryColors[index];
+    blob1.style.fill = document.documentElement.style.getPropertyValue('--secondary-color');
+    blob2.style.fill = document.documentElement.style.getPropertyValue('--secondary-color');
     saveTheme();
 }
 
