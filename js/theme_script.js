@@ -4,6 +4,8 @@ const themePopup = document.querySelector('.theme-popup');
 const colorItems = document.querySelectorAll('.color-item');
 const themeModeBtns = document.querySelectorAll('.theme-item');
 const navLinks = document.querySelectorAll('.nav-link');
+const blob1 = document.getElementById('blob-1');
+const blob2 = document.getElementById('blob-2');
 
 settingsBtn.addEventListener('click', showThemeSettings);
 closeSettingsBtn.addEventListener('click', hideThemeSettings);
@@ -44,6 +46,8 @@ for (let i = 0; i < primaryColors.length; i++) {
 function changeColor(color, index) {
     document.documentElement.style.setProperty('--bg-color', color.target.style.backgroundColor);
     document.documentElement.style.setProperty('--secondary-color', secondaryColors[index]);
+    blob1.style.fill = secondaryColors[index];
+    blob2.style.fill = secondaryColors[index];
     saveTheme();
 }
 
