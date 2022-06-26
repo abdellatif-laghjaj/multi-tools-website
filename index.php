@@ -131,15 +131,17 @@
         );
         tween.start();
 
+        equalHeight();
+
         //Make about text and about skills text to equal height
-        var aboutText = document.querySelector('.about-text');
-        var aboutSkills = document.querySelector('.about-skills');
-        var aboutTextHeight = aboutText.offsetHeight;
-        var aboutSkillsHeight = aboutSkills.offsetHeight;
-        if (aboutTextHeight > aboutSkillsHeight) {
-            aboutSkills.style.height = aboutTextHeight + 'px';
-        } else {
-            aboutText.style.height = aboutSkillsHeight + 'px';
+        function equalHeight() {
+            var aboutHeight = $(".about-text").height();
+            var aboutSkillsHeight = $(".about-skills").height();
+            if (aboutHeight > aboutSkillsHeight) {
+                $(".about-skills").height(aboutHeight);
+            } else {
+                $(".about-text").height(aboutSkillsHeight);
+            }
         }
     </script>
 </body>
