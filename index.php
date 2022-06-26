@@ -80,10 +80,16 @@
                                 <span>CSS</span>
                                 <span>JS</span>
                             </div>
-                            <a href="#" class="project-link" target="_blank">
-                                <span>View Project</span>
-                                <i data-feather="arrow-right"></i>
-                            </a>
+                            <div class="swiper-btns">
+                                <a href="#" class="project-preview" target="_blank">
+                                    <span>View Project</span>
+                                    <i data-feather="arrow-right"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <span>View Code</span>
+                                    <i data-feather="external-link"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
