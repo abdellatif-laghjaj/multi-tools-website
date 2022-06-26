@@ -30,31 +30,3 @@ const PROJECTS_DATA = [
         isPopular: true,
     }
 ];
-
-// Data for the skills section
-const SKILLS_DATA = [
-    {
-        id: 1,
-        title: 'Web Development',
-        value: 90,
-        color: '#e54d26',
-    },
-    {
-        id: 4,
-        title: 'PHP & MySQL',
-        value: 80,
-        color: '#e54d26',
-    },
-    {
-        id: 2,
-        title: 'Mobile Development',
-        value: 80,
-        color: '#e54d26',
-    },
-    {
-        id: 3,
-        title: 'Desktop Development',
-        value: 70,
-        color: '#e54d26',
-    },
-];

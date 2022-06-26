@@ -1,7 +1,6 @@
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 const swiperSlide = swiperWrapper.querySelectorAll('.swiper-slide');
-const aboutSection = document.getElementById('about');
-const aboutSkills = aboutSection.querySelector('.about-skills');
+const aboutSkills = document.querySelector('.about-skills');
 
 // for swiper
 PROJECTS_DATA.filter(project => project.isPopular).forEach(project => {
@@ -23,18 +22,4 @@ PROJECTS_DATA.filter(project => project.isPopular).forEach(project => {
                 </a>
             </div>`;
     swiperWrapper.appendChild(swiperSlide);
-});
-
-// for skills
-SKILLS_DATA.forEach(skill => {
-    const skillItem = document.createElement('div');
-    skillItem.classList.add('skill');
-    skillItem.innerHTML = `
-            <h4>Web</h4>
-            <div class="progress">
-                <div class="progress-bar" data-percentage="${skill.value}" style="background: ${skill.color};">
-                    ${skill.value}%
-                </div>
-            </div> `;
-    aboutSkills.appendChild(skillItem);
 });
