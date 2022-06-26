@@ -16,10 +16,16 @@ PROJECTS_DATA.filter(project => project.isPopular).forEach(project => {
                 <div class="techs-used">
                     ${project.tech.map(tech => `<span>${tech}</span>`).join('')}
                 </div>
-                <a href="${project.link}" class="project-link" target="_blank">
-                    <span>View Project</span>
-                    <i data-feather="arrow-right"></i>
-                </a>
+                <div class="swiper-btns">
+                    <a href="${project.preview}" class="project-preview" target="_blank">
+                        <span>View Project</span>
+                        <i data-feather="arrow-right"></i>
+                    </a>
+                    <a href="${project.link}" class="project-link" target="_blank">
+                        <span>View Code</span>
+                        <i data-feather="external-link"></i>
+                    </a>
+                </div>
             </div>`;
     swiperWrapper.appendChild(swiperSlide);
 });
