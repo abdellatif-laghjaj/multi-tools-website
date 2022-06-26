@@ -23,3 +23,6 @@ PROJECTS_DATA.filter(project => project.isPopular).forEach(project => {
             </div>`;
     swiperWrapper.appendChild(swiperSlide);
 });
+
+
+// for projects items

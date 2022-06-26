@@ -93,7 +93,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #ff5226;
+  background-color: var(--secondary-color);
   padding: 6px 12px;
   color: #fff;
   font-size: 28px;
