@@ -149,6 +149,13 @@
         //Make projects cards equal height
         function equalHeightProjects() {
             var projectsHeight = $("#projects .card").height();
+            // get the tallest card
+            $("#projects .card").each(function() {
+                if ($(this).height() > projectsHeight) {
+                    projectsHeight = $(this).height();
+                }
+            });
+            // set all cards to that height
             $("#projects .card").height(projectsHeight);
         }
     </script>
