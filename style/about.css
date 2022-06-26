@@ -2,18 +2,52 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     height: 100vh;
+    padding: 0 40px;
 }
 
-#about .container {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#about .container h3, #projects .container h3, #contact .container h3 {
+#about h3, #projects h3, #contact h3 {
     font-size: 30px;
     font-weight: bold;
     margin: 0;
     padding: 0;
 }
+
+#about h3 span, #projects h3 span, #contact h3 span {
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+
+#about img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 18px auto;
+    display: block;
+}
+
+#about .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 12px auto;
+}
+
+.about-content .about-text {
+    width: 50%;
+    margin: 0 12px;
+    padding: 12px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.about-text p span {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.about-content
