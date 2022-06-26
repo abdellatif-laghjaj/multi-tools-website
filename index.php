@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <title>Tooly | Multi tools web app</title>
+    <title>Abdellatif Laghjaj | Personal Portfolio</title>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
             <div class="intro-text">
                 <h1>Abdel<span>.</span></h1>
                 <p>
-                    Hello there, I'm<span>Abdellatif Laghjaj</span>, a full stack web developer from Morocco.
+                    Hello there, I'm <span>Abdellatif Laghjaj</span>, a full stack web developer from Morocco.
                 </p>
                 <a href="#projects" class="btn">
                     <span>Get Started</span>
