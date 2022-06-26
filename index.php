@@ -130,6 +130,17 @@
             {repeat: 999, duration: 3000, yoyo: true}
         );
         tween.start();
+
+        //Make about text and about skills text to equal height
+        var aboutText = document.querySelector('.about-text');
+        var aboutSkills = document.querySelector('.about-skills');
+        var aboutTextHeight = aboutText.offsetHeight;
+        var aboutSkillsHeight = aboutSkills.offsetHeight;
+        if (aboutTextHeight > aboutSkillsHeight) {
+            aboutSkills.style.height = aboutTextHeight + 'px';
+        } else {
+            aboutText.style.height = aboutSkillsHeight + 'px';
+        }
     </script>
 </body>
 
