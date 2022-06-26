@@ -8,26 +8,24 @@ PROJECTS_DATA.forEach(project => {
     projectItem.classList.add('card');
     projectItem.innerHTML = `
             <div class="card-header">
-              <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+              <img src="${project.image}" alt="rover" />
             </div>
             <div class="card-body">
-                <div class="techs-used">    
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JS</span>
+                <div class="techs-used">
+                    ${project.tech.map(tech => `<span class="tag">${tech}</span>`).join('')}
                 </div>
-              <h4>Project 1</h4>
+              <h4>${project.title}</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, quasi dignissimos exercitationem iusto.
+                ${project.description}
               </p>
             </div>
 
             <div class="project-btns">
-                <a href="#">
+                <a href="${project.preview}" target="_blank">
                     View project
                     <i data-feather="arrow-right"></i>
                 </a>
-                <a href="#">
+                <a href="${project.link}" target="_blank">
                     View code
                     <i data-feather="external-link"></i>
                 </a>

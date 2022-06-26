@@ -133,6 +133,7 @@
         tween.start();
 
         equalHeight();
+        equalHeightProjects();
 
         //Make about text and about skills text to equal height
         function equalHeight() {
@@ -143,6 +144,12 @@
             } else {
                 $(".about-text").height(aboutSkillsHeight);
             }
+        }
+
+        //Make projects cards equal height
+        function equalHeightProjects() {
+            var projectsHeight = $("#projects .card").height();
+            $("#projects .card").height(projectsHeight);
         }
     </script>
 </body>
