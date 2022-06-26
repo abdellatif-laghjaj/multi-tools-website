@@ -1,7 +1,7 @@
 #about, #projects, #contact {
     background-color: var(--bg-color);
     color: var(--text-color);
-    height: 100vh;
+    height: 100%;
     padding: 0 40px;
 }
 
