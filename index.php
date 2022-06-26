@@ -68,7 +68,7 @@
             </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" is-popular="true" data-category="web">
+                    <!-- <div class="swiper-slide" is-popular="true" data-category="web">
                         <img src="https://picsum.photos/seed/picsum/200/300" alt="">
                         <span class="popular">
                             <i data-feather="star"></i>
@@ -91,7 +91,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
