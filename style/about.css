@@ -85,6 +85,15 @@
     background-color: transparent;
 }
 
+.download-cv:hover{
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+}
+
+.contact-me:hover{
+    background-color: var(--secondary-color);
+}
+
 .about-content .about-skills {
     width: 50%;
     margin: 0 12px;
