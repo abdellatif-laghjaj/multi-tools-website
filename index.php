@@ -32,7 +32,7 @@
         <?php include 'components/blob.html'; ?>
         
         <header>
-            <a href="" class="logo">Tooly<span>.</span></a>
+            <a href="" class="logo">Abdel<span>.</span></a>
             <nav>
                 <ul>
                     <li class="nav-link active-link">
@@ -57,9 +57,9 @@
         <div class="intro-container">
             <!-- Intro content -->
             <div class="intro-text">
-                <h1>Tooly<span>.</span></h1>
+                <h1>Abdel<span>.</span></h1>
                 <p>
-                    A multi tools web app that you can use to do many things.
+                    Hello there, I'm<span>Abdellatif Laghjaj</span>, a full stack web developer from Morocco.
                 </p>
                 <a href="#projects" class="btn">
                     <span>Get Started</span>

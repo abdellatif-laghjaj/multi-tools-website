@@ -5,6 +5,7 @@ const PROJECTS_DATA = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
         image: 'https://picsum.photos/200',
         link: '#',
+        preview: 'https://picsum.photos/200',
         tech: ['HTML', 'CSS', 'JS'],
         isPopular: true,
     },
@@ -14,6 +15,7 @@ const PROJECTS_DATA = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
         image: 'https://picsum.photos/200',
         link: '#',
+        preview: 'https://picsum.photos/200',
         tech: ['PHP', 'HTML', 'CSS', 'JS'],
         isPopular: false,
     },
@@ -23,6 +25,7 @@ const PROJECTS_DATA = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
         image: 'https://picsum.photos/200',
         link: '#',
+        preview: 'https://picsum.photos/200',
         tech: ['JAVA', 'MYSQL', 'XML'],
         isPopular: true,
     }
