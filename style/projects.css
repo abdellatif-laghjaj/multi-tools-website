@@ -24,6 +24,15 @@
     transition: var(--transition);
 }
 
+.card .popular{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    padding: 6px 12px;
+    border-radius: 0 0 10px 0;
+}
+
 .card .card-header img {
     width: 100%;
     height: 200px;

@@ -7,6 +7,12 @@ PROJECTS_DATA.forEach(project => {
     const projectItem = document.createElement('div');
     projectItem.classList.add('card');
     projectItem.innerHTML = `
+            ${
+                project.isPopular ? `
+                <span class="popular">
+                    <i data-feather="star"></i>
+                </span>` : ''
+            }
             <div class="card-header">
               <img src="${project.image}" alt="rover" />
             </div>
