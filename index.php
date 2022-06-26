@@ -112,6 +112,7 @@
     <!-- JS -->
     <script src="js/theme_script.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/fecth_projetcs_items.js"></script>
     <script src="js/main.js"></script>
     <script>
         feather.replace();

@@ -1,9 +1,12 @@
-<section id="projects">
-    <h3 class="section-title">Projects<span>.</span></h3>
+const projectsSection = document.getElementById('projects');
+const projectsContainer = projectsSection.querySelector('.container');
 
-    <div class="container">
-        <!-- Project item -->
-        <div class="card">
+
+// for projects items
+PROJECTS_DATA.forEach(project => {
+    const projectItem = document.createElement('div');
+    projectItem.classList.add('card');
+    projectItem.innerHTML = `
             <div class="card-header">
               <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
             </div>
@@ -28,7 +31,6 @@
                     View code
                     <i data-feather="external-link"></i>
                 </a>
-            </div>
-        </div>
-    </div>
-</section>
+            </div>`;
+    projectsContainer.appendChild(projectItem);
+});
