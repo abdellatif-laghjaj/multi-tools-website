@@ -50,7 +50,7 @@
 }
 .card-body p {
   font-size: 13px;
-  margin: 0 0 40px;
+  margin: 10px 0;
 }
 
 
@@ -65,7 +65,7 @@
 .project-btns a {
     width: 100%;
     height: 50px;
-  font-size: 14px;
+  font-size: 18px;
   background-color: var(--secondary-color);
   color: var(--text-color);
   text-decoration: none;
@@ -73,4 +73,8 @@
   align-items: center;
   justify-content: space-evenly;
   cursor: pointer;
+}
+
+.project-btns a:not(:last-child) {
+  border-right: 1px solid var(--text-color);
 }
