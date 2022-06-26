@@ -1,4 +1,19 @@
 #about, #projects, #contact {
     background-color: var(--bg-color);
+    color: var(--text-color);
     height: 100vh;
+}
+
+#about .container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#about .container h3, #projects .container h3, #contact .container h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
