@@ -311,6 +311,16 @@ nav ul.mobile-nav {
   #about .about-content .about-text p span {
     font-size: 18px;
   }
+
+  #contact .container{
+    width: 100%;
+    padding: 20px; 
+    margin: 20px 0;
+  }
+
+  #contact .container .contact-form .two-inputs {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 568px) {
@@ -326,6 +336,12 @@ nav ul.mobile-nav {
 
   #about .container .about-content .about-skills .progress .progress-bar {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 548px) {
+  #contact .container .contact-info {
+    margin-top: 20px;
   }
 }
 
