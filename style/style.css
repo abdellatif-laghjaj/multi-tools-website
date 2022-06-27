@@ -154,24 +154,28 @@ header nav ul .nav-link a,
   display: none;
 }
 
-header nav.active{
+header nav.mobile-nav{
   position: absolute;
   top: 0;
   right: 0;
   width: 70%;
   height: 100vh;
-  margin: 0;
+  margin: -10px -10px 0 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
-  background-color: red;
+  background: #06283D;
+  color: #fff;
 }
 
-nav ul.active{
+nav ul.mobile-nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.mobile-nav ul li{
+  color: #fff;
 }
 
 
@@ -180,5 +184,17 @@ nav ul.active{
     width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+
+  #intro .intro-container{
+    flex-direction: column;
+  }
+
+  #intro .intro-text{
+    margin-top: 100px;
+  }
+
+  #intro .swiper{
+    width: 90%;
   }
 }

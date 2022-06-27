@@ -33,8 +33,8 @@
         
         <header>
             <a href="" class="logo">Abdel<span>.</span></a>
-            <nav class="active">
-                <ul class="active">
+            <nav>
+                <ul>
                     <li class="nav-link active-link">
                         <a href="#">Home</a>
                     </li>
