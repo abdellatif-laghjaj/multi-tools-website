@@ -197,6 +197,21 @@ nav ul.mobile-nav {
   #about .about-content .about-text p span {
     font-size: 19px;
   }
+
+  /* Contact */
+  
+  #contact .container{
+    flex-wrap: wrap;
+  }
+
+
+  #contact .container .contact-form {
+    width: 100%;
+  }
+
+  #contact .container .contact-info {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 1046px) {
