@@ -6,12 +6,31 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .container .contact-form {
+    width: 500px;
     display: flex;
     flex-direction: column;
+}
+
+.contact-form .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .container .contact-info {
