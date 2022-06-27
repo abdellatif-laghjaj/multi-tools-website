@@ -121,3 +121,28 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.social-media .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.social-link:not(:last-child) {
+    margin-right: 12px;
+}
+
+.social-link:hover {
+    background: var(--primary-color);
+}
+
+.social-link a{
+    color: #fff;
+    text-decoration: none;
+}
