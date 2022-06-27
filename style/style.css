@@ -56,7 +56,7 @@ body {
   height: 100vh;
 }
 
-.blob-anim{
+.blob-anim {
   position: absolute;
   top: -300px;
   left: -400px;
@@ -81,6 +81,7 @@ header {
   padding: 20px;
   margin: 16px;
   user-select: none;
+  transition: var(--transition);
   z-index: 999;
 }
 
@@ -139,4 +140,45 @@ header nav ul .nav-link a,
   background: var(--secondary-color);
   padding: 4px 8px;
   border-radius: 4px;
+}
+
+/* MENU FOR MOBILE */
+.menu-btn .menu-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 22px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: var(--transition);
+  display: none;
+}
+
+
+@media only screen and (max-width: 860px){
+  header {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+
+    /* position: fixed;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 16px;
+  user-select: none;
+  transition: var(--transition);
+  z-index: 999; */
+  } 
 }

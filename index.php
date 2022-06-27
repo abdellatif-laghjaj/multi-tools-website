@@ -53,7 +53,13 @@
                 </ul>
             </nav>
         </header>
+        
+        <!-- Menu Button For Mobile -->
+        <div class="menu-btn">
+            <i data-feather="grid" class="menu-icon"></i>
+        </div>
 
+        <!-- Intro Content -->
         <div class="intro-container">
             <!-- Intro content -->
             <div class="intro-text">
@@ -121,6 +127,7 @@
     <script src="js/fecth_projetcs_items.js"></script>
     <script src="js/fetch_swiper_items.js"></script>
     <script src="js/useful_functions.js"></script>
+    <script src="js/responsive_navbar.js"></script>
 </body>
 
 </html>
