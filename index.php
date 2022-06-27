@@ -164,6 +164,15 @@
             // set all cards to that height
             $("#projects .card").height(projectsHeight);
         }
+        
+        const copyrightYear = document.getElementById('copyright-year');
+
+        //get current year
+        function getCurrentYear() {
+            return new Date().getFullYear();
+        }
+
+        copyrightYear.innerHTML = getCurrentYear();
     </script>
 </body>
 
