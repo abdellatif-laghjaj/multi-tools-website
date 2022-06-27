@@ -12,7 +12,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 24px;
+    margin: 24px 0;
 }
 
 .container .card {

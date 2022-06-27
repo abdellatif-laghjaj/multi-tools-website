@@ -209,6 +209,12 @@ nav ul.mobile-nav {
   }
 }
 
+@media only screen and (max-width: 919px){
+  #projects .container .card{
+    width: 96%;
+  }
+}
+
 @media only screen and (max-width: 860px) {
   /* intro section */
 
