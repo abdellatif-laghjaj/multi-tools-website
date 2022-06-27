@@ -94,9 +94,25 @@
     flex-direction: column;
 }
 
+.contact-info .contact-info-text {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
 .contact-info .contact-item {
     margin-bottom: 20px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-item h4{
+    margin-left: 10px;
+}
+
+.contact-item p .email a{
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 .contact-info .social-media {
