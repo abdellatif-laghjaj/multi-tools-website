@@ -178,8 +178,40 @@ nav ul.mobile-nav{
   color: #fff;
 }
 
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 1260px){
+  #about .about-content .about-text p{
+    font-size: 18px;
+  }
+
+  #about .about-content .about-text p span {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 1136px){
+  #about .about-content .about-text p{
+    font-size: 16px;
+  }
+
+  #about .about-content .about-text p span {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 1046px){
+  #about .about-content .about-text p{
+    font-size: 14px;
+  }
+
+  #about .about-content .about-text p span {
+    font-size: 15px;
+  }
+}
 
 @media only screen and (max-width: 860px){
+  /* intro section */
+
   header {
     width: 100%;
     margin: 0;
@@ -196,5 +228,20 @@ nav ul.mobile-nav{
 
   #intro .swiper{
     width: 90%;
+  }
+
+  /* about section */
+  #about .about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+
+  }
+
+  #about .about-content .about-text p{
+    font-size: 18px;
   }
 }

@@ -69,6 +69,7 @@
   flex-direction: column;
   border-radius: 18px;
   color: #fff;
+  user-select: none;
 }
 
 .swiper-slide img{
