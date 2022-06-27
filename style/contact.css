@@ -139,7 +139,9 @@
 }
 
 .social-link:hover {
-    background: var(--primary-color);
+    transform: scale(1.12);
+    border: 3px solid var(--text-color);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
 }
 
 .social-link a{
