@@ -231,14 +231,16 @@ nav ul.mobile-nav{
   }
 
   /* about section */
-  #about .about-content{
-    display: flex;
+  #about .container .about-content{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
+  }
 
+  #about .container .about-content .about-text, #about .container .about-content .about-skills{
+    width: 90%;
+  }
+
+  #about .container .about-content .about-text{
+    margin-bottom: 24px;
   }
 
   #about .about-content .about-text p{
