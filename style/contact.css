@@ -1,0 +1,32 @@
+#contact{
+    height: 100vh;
+}
+#contact .container {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .contact-item {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.contact-info .social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
