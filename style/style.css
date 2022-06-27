@@ -181,6 +181,16 @@ nav ul.mobile-nav{
 /* RESPONSIVE DESIGN */
 @media only screen and (max-width: 1260px){
   #about .about-content .about-text p{
+    font-size: 19px;
+  }
+
+  #about .about-content .about-text p span {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1136px){
+  #about .about-content .about-text p{
     font-size: 18px;
   }
 
@@ -189,23 +199,13 @@ nav ul.mobile-nav{
   }
 }
 
-@media only screen and (max-width: 1136px){
-  #about .about-content .about-text p{
-    font-size: 16px;
-  }
-
-  #about .about-content .about-text p span {
-    font-size: 17px;
-  }
-}
-
 @media only screen and (max-width: 1046px){
   #about .about-content .about-text p{
-    font-size: 14px;
+    font-size: 15px;
   }
 
   #about .about-content .about-text p span {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -226,6 +226,18 @@ nav ul.mobile-nav{
     margin-top: 100px;
   }
 
+  #intro .intro-text h1{
+    font-size: 40px;
+  }
+
+  #intro .intro-text p{
+    font-size: 26px;
+  }
+
+  #intro .intro-text a{
+    margin-bottom: 40px;
+  }
+
   #intro .swiper{
     width: 90%;
   }
@@ -233,6 +245,7 @@ nav ul.mobile-nav{
   /* about section */
   #about .container .about-content{
     flex-direction: column;
+    margin-bottom: 34px;
   }
 
   #about .container .about-content .about-text, #about .container .about-content .about-skills{
@@ -244,6 +257,10 @@ nav ul.mobile-nav{
   }
 
   #about .about-content .about-text p{
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  #about .about-content .about-text p span {
+    font-size: 22px;
   }
 }
