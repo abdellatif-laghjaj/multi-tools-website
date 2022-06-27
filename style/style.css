@@ -154,7 +154,7 @@ header nav ul .nav-link a,
   display: none;
 }
 
-header nav.mobile-nav{
+header nav.mobile-nav {
   position: absolute;
   top: 0;
   right: 0;
@@ -164,23 +164,23 @@ header nav.mobile-nav{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background: #06283D;
+  background: #06283d;
   color: #fff;
 }
 
-nav ul.mobile-nav{
+nav ul.mobile-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mobile-nav ul li{
+.mobile-nav ul li {
   color: #fff;
 }
 
 /* RESPONSIVE DESIGN */
-@media only screen and (max-width: 1260px){
-  #about .about-content .about-text p{
+@media only screen and (max-width: 1260px) {
+  #about .about-content .about-text p {
     font-size: 19px;
   }
 
@@ -189,8 +189,8 @@ nav ul.mobile-nav{
   }
 }
 
-@media only screen and (max-width: 1136px){
-  #about .about-content .about-text p{
+@media only screen and (max-width: 1136px) {
+  #about .about-content .about-text p {
     font-size: 18px;
   }
 
@@ -199,8 +199,8 @@ nav ul.mobile-nav{
   }
 }
 
-@media only screen and (max-width: 1046px){
-  #about .about-content .about-text p{
+@media only screen and (max-width: 1046px) {
+  #about .about-content .about-text p {
     font-size: 15px;
   }
 
@@ -209,7 +209,7 @@ nav ul.mobile-nav{
   }
 }
 
-@media only screen and (max-width: 860px){
+@media only screen and (max-width: 860px) {
   /* intro section */
 
   header {
@@ -218,45 +218,46 @@ nav ul.mobile-nav{
     border-radius: 0;
   }
 
-  #intro .intro-container{
+  #intro .intro-container {
     flex-direction: column;
   }
 
-  #intro .intro-text{
+  #intro .intro-text {
     margin-top: 100px;
   }
 
-  #intro .intro-text h1{
+  #intro .intro-text h1 {
     font-size: 40px;
   }
 
-  #intro .intro-text p{
+  #intro .intro-text p {
     font-size: 26px;
   }
 
-  #intro .intro-text a{
+  #intro .intro-text a {
     margin-bottom: 40px;
   }
 
-  #intro .swiper{
+  #intro .swiper {
     width: 90%;
   }
 
   /* about section */
-  #about .container .about-content{
+  #about .container .about-content {
     flex-direction: column;
     margin-bottom: 34px;
   }
 
-  #about .container .about-content .about-text, #about .container .about-content .about-skills{
+  #about .container .about-content .about-text,
+  #about .container .about-content .about-skills {
     width: 90%;
   }
 
-  #about .container .about-content .about-text{
+  #about .container .about-content .about-text {
     margin-bottom: 24px;
   }
 
-  #about .about-content .about-text p{
+  #about .about-content .about-text p {
     font-size: 20px;
   }
 
@@ -265,12 +266,14 @@ nav ul.mobile-nav{
   }
 }
 
-@media only screen and (max-width: 718px){
-  #about .container .about-content .about-text, #about .container .about-content .about-skills{
+@media only screen and (max-width: 718px) {
+
+  #about .container .about-content .about-text,
+  #about .container .about-content .about-skills {
     width: 98%;
   }
 
-  #about .about-content .about-text p{
+  #about .about-content .about-text p {
     font-size: 18px;
   }
 
@@ -279,8 +282,8 @@ nav ul.mobile-nav{
   }
 }
 
-@media only screen and (max-width: 608px){
-  #about .about-content .about-text p{
+@media only screen and (max-width: 608px) {
+  #about .about-content .about-text p {
     font-size: 16px;
   }
 
@@ -289,8 +292,24 @@ nav ul.mobile-nav{
   }
 }
 
-@media only screen and (max-width: 494px){
-  #about .about-content .about-text p{
+@media only screen and (max-width: 568px) {
+  #about .container .about-content .about-skills .skill h4 {
+    font-size: 16px;
+  }
+
+  #about .container .about-content .about-skills .skill .progress {
+    height: 22px;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+  }
+
+  #about .container .about-content .about-skills .progress .progress-bar {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 494px) {
+  #about .about-content .about-text p {
     font-size: 15px;
   }
 
@@ -298,29 +317,43 @@ nav ul.mobile-nav{
     font-size: 17px;
   }
 
-  #about .about-content .about-text .about-btns a{
+  #about .about-content .about-text .about-btns a {
     width: 100px;
     height: 42px;
     font-size: 12px;
   }
 }
 
-@media only screen and (max-width: 454px){
-  #about .about-content .about-text p{
+@media only screen and (max-width: 454px) {
+  #about .about-content .about-text p {
     font-size: 13px;
   }
 
   #about .about-content .about-text p span {
     font-size: 14px;
   }
+
+  #about .container .about-content .about-skills .skill h4 {
+    font-size: 14px;
+  }
+
+  #about .container .about-content .about-skills .skill .progress {
+    height: 18px;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+  }
+
+  #about .container .about-content .about-skills .progress .progress-bar {
+    font-size: 11px;
+  }
 }
 
-@media only screen and (max-width: 418px){
-  #intro .intro-text h1{
+@media only screen and (max-width: 418px) {
+  #intro .intro-text h1 {
     font-size: 30px;
   }
 
-  #intro .intro-text p{
+  #intro .intro-text p {
     font-size: 22px;
   }
 }
