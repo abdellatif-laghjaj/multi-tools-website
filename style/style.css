@@ -388,6 +388,16 @@ nav ul.mobile-nav {
   }
 }
 
+@media only screen and (max-width: 512px){
+  #about .about-content .about-text p {
+    font-size: 14px;
+  }
+
+  #about .about-content .about-text p span {
+    font-size: 16px;
+  }
+}
+
 @media only screen and (max-width: 494px) {
   #about .about-content .about-text p {
     font-size: 15px;
@@ -467,5 +477,12 @@ nav ul.mobile-nav {
 
   #contact .container .contact-info .social-media .social-link:not(:last-child) {
     margin-right: 6px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #projects .container .card .project-btns a {
+    height: 42px;
+    font-size: 12px;
   }
 }
