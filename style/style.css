@@ -145,12 +145,12 @@ header nav ul .nav-link a,
 /* MENU FOR MOBILE */
 .menu-btn .menu-icon {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin: 22px;
+  top: 8px;
+  right: 18px;
   cursor: pointer;
   color: var(--text-color);
   transition: var(--transition);
+  cursor: pointer;
   display: none;
 }
 
@@ -179,6 +179,19 @@ nav ul.mobile-nav {
 }
 
 /* RESPONSIVE DESIGN */
+
+
+
+@media only screen and (max-width: 668px) {
+  header nav{
+    display: none;
+  }
+
+  .menu-btn .menu-icon{
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 1260px) {
   #about .about-content .about-text p {
     font-size: 19px;
@@ -302,6 +315,7 @@ nav ul.mobile-nav {
     font-size: 20px;
   }
 }
+
 
 @media only screen and (max-width: 608px) {
   #about .about-content .about-text p {
