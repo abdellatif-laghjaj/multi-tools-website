@@ -314,8 +314,6 @@ nav ul.mobile-nav {
 
   #contact .container {
     width: 100%;
-    padding: 20px;
-    margin: 20px 0;
   }
 
   #contact .container .contact-form .two-inputs {
@@ -340,6 +338,10 @@ nav ul.mobile-nav {
 }
 
 @media only screen and (max-width: 548px) {
+  #contact .container{
+    background: transparent;
+  }
+
   #contact .container .contact-info {
     margin-top: 20px;
     width: 100%;
@@ -381,6 +383,10 @@ nav ul.mobile-nav {
     width: 100px;
     height: 42px;
     font-size: 12px;
+  }
+
+  #projects .container .card {
+    width: 100%;
   }
 }
 
