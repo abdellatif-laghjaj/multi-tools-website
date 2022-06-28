@@ -187,6 +187,10 @@ nav ul.mobile-nav {
     display: none;
   }
 
+  header nav ul .theme-icon{
+    display: block;
+  }
+
   .menu-btn .menu-icon{
     display: block;
   }
