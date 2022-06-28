@@ -260,12 +260,12 @@ nav ul.mobile-nav {
     flex-direction: column;
   }
 
-  #intro .intro-text {
-    margin-top: 100px;
+  #intro .intro-container .intro-text h1{
+    display: none;
   }
 
-  #intro .intro-text h1 {
-    font-size: 40px;
+  #intro .intro-text {
+    margin-top: 54px;
   }
 
   #intro .intro-text p {
