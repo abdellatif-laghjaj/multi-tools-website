@@ -23,20 +23,22 @@ loadTheme();
 
 //color picker
 const primaryColors = [
-    '#377D71',
-    '#FF7396',
+    '#FF2E63',
     '#3B44F6',
-    '#1363DF',
+    '#377D71',
+    '#764AF1',
     '#FFA500',
+    '#ED5EDD',
+    '#1363DF',
 ]
 
-const secondaryColors = [
-    '#FBC5C5',
-    '#F4E06D',
-    '#A149FA',
-    '#47B5FF',
-    '#FFE5B4',
-];
+// const secondaryColors = [
+//     '#FBC5C5',
+//     '#F4E06D',
+//     '#A149FA',
+//     '#47B5FF',
+//     '#FFE5B4',
+// ];
 
 for (let i = 0; i < primaryColors.length; i++) {
     colorItems[i].style.backgroundColor = primaryColors[i];
@@ -45,7 +47,7 @@ for (let i = 0; i < primaryColors.length; i++) {
 
 function changeColor(color, index) {
     // document.documentElement.style.setProperty('--bg-color', color.target.style.backgroundColor);
-    document.documentElement.style.setProperty('--secondary-color', secondaryColors[index]);
+    document.documentElement.style.setProperty('--secondary-color', primaryColors[index]);
     blob1.style.fill = document.documentElement.style.getPropertyValue('--secondary-color');
     blob2.style.fill = document.documentElement.style.getPropertyValue('--secondary-color');
     saveTheme();
@@ -55,10 +57,10 @@ function changeColor(color, index) {
 themeModeBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         if(btn.classList.contains('dark-mode')) {
-            document.documentElement.style.setProperty('--bg-color', '#212121');
+            document.documentElement.style.setProperty('--bg-color', '#222831');
             document.documentElement.style.setProperty('--text-color', '#fff');
         }else {
-            document.documentElement.style.setProperty('--bg-color', '#fff');
+            document.documentElement.style.setProperty('--bg-color', '#F6FBF4');
             document.documentElement.style.setProperty('--text-color', '#000');
         }
         saveTheme();
