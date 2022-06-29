@@ -23,19 +23,19 @@ loadTheme();
 
 //color picker
 const primaryColors = [
-    '#f44336',
-    '#e91e63',
-    '#9c27b0',
-    '#673ab7',
-    '#3f51b5',
+    '#377D71',
+    '#FF7396',
+    '#3B44F6',
+    '#1363DF',
+    '#FFA500',
 ]
 
 const secondaryColors = [
-    '#ff9800',
-    '#ff5722',
-    '#795548',
-    '#607d8b',
-    '#3f51b5',
+    '#FBC5C5',
+    '#F4E06D',
+    '#A149FA',
+    '#47B5FF',
+    '#FFE5B4',
 ];
 
 for (let i = 0; i < primaryColors.length; i++) {
@@ -44,7 +44,7 @@ for (let i = 0; i < primaryColors.length; i++) {
 }
 
 function changeColor(color, index) {
-    document.documentElement.style.setProperty('--bg-color', color.target.style.backgroundColor);
+    // document.documentElement.style.setProperty('--bg-color', color.target.style.backgroundColor);
     document.documentElement.style.setProperty('--secondary-color', secondaryColors[index]);
     blob1.style.fill = document.documentElement.style.getPropertyValue('--secondary-color');
     blob2.style.fill = document.documentElement.style.getPropertyValue('--secondary-color');
