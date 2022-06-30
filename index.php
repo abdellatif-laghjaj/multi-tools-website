@@ -34,7 +34,7 @@
         <header>
             <a href="" class="logo">Abdel<span>.</span></a>
             <nav>
-                <ul>
+                <ul class="navbar-links">
                     <li class="nav-link active-link">
                         <a href="#">Home</a>
                     </li>
