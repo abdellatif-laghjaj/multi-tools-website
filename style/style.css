@@ -97,6 +97,10 @@ header .logo {
   font-size: 30px;
 }
 
+header nav{
+  transition: var(--transition);
+}
+
 header nav ul {
   display: flex;
   align-items: center;

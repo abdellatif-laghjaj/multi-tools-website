@@ -100,3 +100,12 @@ color:  var(--text-color);
 .theme-item:not(:last-child) {
   margin-right: 16px;
 }
+
+
+/* For mobile */
+
+@media only screen and (max-width: 417px) {
+  .theme-popup .theme-popup-inner{
+    width: 94%;
+  }
+}
