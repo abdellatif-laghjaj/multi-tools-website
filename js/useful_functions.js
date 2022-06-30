@@ -50,3 +50,17 @@ function getCurrentYear() {
 }
 
 copyrightYear.innerHTML = getCurrentYear();
+
+
+changeNavbarColor();
+
+//change the background color of the navbar when scrolling
+function changeNavbarColor() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 80) {
+        $("header").style.backgroundColor = "rgba(0,0,0,0.9)";
+        console.log("scrolled");
+    } else {
+        $("header").style.backgroundColor = "transparent";
+    }
+}

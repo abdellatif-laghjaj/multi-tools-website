@@ -280,6 +280,10 @@ nav ul.mobile-nav {
     width: 90%;
   }
 
+  #intro .intro-container .swiper{
+    margin-bottom: 60px;
+  }
+
   /* about section */
   #about .container .about-content {
     flex-direction: column;
@@ -317,6 +321,10 @@ nav ul.mobile-nav {
 
   #about .about-content .about-text p span {
     font-size: 20px;
+  }
+
+  #intro .intro-text a{
+    margin-bottom: 0;
   }
 }
 
