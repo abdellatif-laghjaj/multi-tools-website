@@ -288,7 +288,7 @@ nav ul.mobile-nav {
   }
 
   #intro .intro-container .swiper{
-    margin-bottom: 60px;
+    margin-bottom: 14px;
   }
 
   /* about section */
@@ -312,6 +312,14 @@ nav ul.mobile-nav {
 
   #about .about-content .about-text p span {
     font-size: 22px;
+  }
+
+  #intro .intro-container .intro-text a{
+    width: 100%;
+  }
+
+  #intro .intro-container .intro-text{
+    margin-right: 26px;
   }
 }
 

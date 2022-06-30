@@ -1,9 +1,8 @@
 const header = document.querySelector('header');
 const nav = document.querySelector('nav');
-const menuButton = document.querySelector('.menu-btn');
+const menuButton = document.querySelector('.menu-icon-fixed');
 
 
 menuButton.addEventListener('click', () => {
-  nav.classList.toggle('mobile-nav');
-}
-);
+  alert('clicked');
+});
