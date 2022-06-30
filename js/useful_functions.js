@@ -52,15 +52,24 @@ function getCurrentYear() {
 copyrightYear.innerHTML = getCurrentYear();
 
 
-changeNavbarColor();
+//change the background color of the navbar when user scroll  80px down
+let glassMorphism = `background: rgba(255, 255, 255, 0.25);
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border-radius: 999px;
+border: 1px solid rgba(255, 255, 255, 0.18);
+`;
 
-//change the background color of the navbar when scrolling
-function changeNavbarColor() {
-    var scroll = $(window).scrollTop();
-    if (scroll > 80) {
-        $("header").style.backgroundColor = "rgba(0,0,0,0.9)";
-        console.log("scrolled");
-    } else {
-        $("header").style.backgroundColor = "transparent";
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 80) {
+        $('header').css('background-color', 'rgba(0,0,0,0.9)');
+    }else {
+        $('header').css('background-color', 'rgba(255,255,255,0.25)');
+        $('header').css('box-shadow', '0 8px 32px 0 rgba(31, 38, 135, 0.37)');
+        $('header').css('backdrop-filter', 'blur(0px)');
+        $('header').css('-webkit-backdrop-filter', 'blur(0px)');
+        $('header').css('border-radius', '999px');
+        $('header').css('border', '1px solid rgba(255, 255, 255, 0.18)');
     }
-}
+});

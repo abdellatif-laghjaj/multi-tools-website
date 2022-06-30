@@ -56,7 +56,9 @@
         
         <!-- Menu Button For Mobile -->
         <div class="menu-btn">
-            <i data-feather="grid" class="menu-icon"></i>
+            <div class="menu-icon">
+                <i data-feather="grid" class="menu-icon-fixed"></i>
+            </div>
         </div>
 
         <!-- Intro Content -->

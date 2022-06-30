@@ -154,6 +154,12 @@ header nav ul .nav-link a,
   display: none;
 }
 
+.menu-icon .menu-icon-fixed{
+  position: fixed;
+  right: 18px;
+  z-index: 999;
+}
+
 header nav.mobile-nav {
   position: absolute;
   top: 0;
