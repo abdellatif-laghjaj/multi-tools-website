@@ -3,8 +3,7 @@ const nav = document.querySelector('nav');
 const menuButton = document.querySelector('.menu-btn');
 
 
-menuButton.addEventListener('click', shwoSidebar);
-
-function shwoSidebar() {
+menuButton.addEventListener('click', () => {
   nav.classList.toggle('mobile-nav');
 }
+);

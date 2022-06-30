@@ -158,13 +158,14 @@ header nav ul .nav-link a,
   position: fixed;
   right: 18px;
   z-index: 999;
+  cursor: pointer;
 }
 
 header nav.mobile-nav {
   position: absolute;
   top: 0;
   right: 0;
-  width: 70%;
+  width: 100%;
   height: 100vh;
   margin: -10px -10px 0 0;
   display: flex;

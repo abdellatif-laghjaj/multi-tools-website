@@ -65,6 +65,7 @@ if ($(window).width() < 900) {
                 $('header .logo').css('color', '#fff');
                 $('header nav ul .nav-link a').css('color', '#fff');
                 $('header nav ul .theme-icon').css('color', '#fff');
+                $('.menu-icon .menu-icon-fixed').css('color', '#fff');
             }
             $('header').css('background-color', 'rgba(0,0,0,0.96)');
             $('header').css('border-radius', '0px');
@@ -83,6 +84,7 @@ if ($(window).width() < 900) {
             $('header nav ul .nav-link a').css('color', 'var(--text-color)');
             $('header nav ul .theme-icon').css('color', 'var(--text-color)');
             $('header .logo').css('color', 'var(--text-color)');
+            $('.menu-icon .menu-icon-fixed').css('color', 'var(--text-color)');
         }
     });
 }else {
