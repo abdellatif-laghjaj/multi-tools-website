@@ -147,6 +147,12 @@ header nav ul .nav-link a,
   border-radius: 4px;
 }
 
+.nav-link.theme-icon{
+  position: absolute;
+  right: 50px;
+  top: 14px;
+}
+
 /* MENU FOR MOBILE */
 .menu-btn .menu-icon {
   position: absolute;
@@ -170,8 +176,8 @@ header nav.mobile-nav {
   position: absolute;
   top: 0;
   right: 0;
-  width: 70%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
