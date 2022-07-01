@@ -27,8 +27,8 @@
 #about img{
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    margin: 18px auto;
+    background-size: cover;
+    margin: 22px auto;
     display: block;
 }
 
