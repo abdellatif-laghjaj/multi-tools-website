@@ -151,6 +151,7 @@ header nav ul .nav-link a,
   position: absolute;
   right: 50px;
   top: 14px;
+  z-index: 999;
 }
 
 /* MENU FOR MOBILE */
