@@ -67,7 +67,7 @@
             <div class="intro-text">
                 <h1>Abdel<span>.</span></h1>
                 <p>
-                    Hello there, I'm <span>Abdellatif Laghjaj</span>, a full stack web developer from Morocco.
+                    Hello there, I'm <span style="color: var(--primary-color); font-weight: bold;">Abdellatif Laghjaj</span>, a passionate <span style="color: var(--primary-color); font-weight: bold;">full-stack</span> developer from <span style="color: var(--primary-color); font-weight: bold;">Morocco</span>. Here are some of my <span style="color: var(--primary-color); font-weight: bold;">featured</span> projects.
                 </p>
                 <a href="#projects" class="btn">
                     <span>Get Started</span>
@@ -124,10 +124,10 @@
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
 
     <!-- JS -->
-    <script src="js/theme_script.js"></script>
     <script src="js/data.js"></script>
     <script src="js/fecth_projetcs_items.js"></script>
     <script src="js/fetch_swiper_items.js"></script>
+    <script src="js/theme_script.js"></script>
     <script src="js/useful_functions.js"></script>
     <script src="js/responsive_navbar.js"></script>
 </body>
