@@ -30,7 +30,7 @@
 
         <!-- Blob -->
         <?php include 'components/blob.html'; ?>
-        
+
         <header>
             <a href="" class="logo">Abdel<span>.</span></a>
             <nav>
@@ -53,7 +53,7 @@
                 </ul>
             </nav>
         </header>
-        
+
         <!-- Menu Button For Mobile -->
         <div class="menu-btn">
             <div class="menu-icon">
