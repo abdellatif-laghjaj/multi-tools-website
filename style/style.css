@@ -171,8 +171,7 @@ header nav.mobile-nav {
   top: 0;
   right: 0;
   width: 70%;
-  height: 100vh;
-  margin: -10px -10px 0 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -344,7 +343,7 @@ header nav.mobile-nav {
   }
 
   #intro .intro-text a{
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 
