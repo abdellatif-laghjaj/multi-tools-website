@@ -89,5 +89,15 @@ const PROJECTS_DATA = [
         preview: 'https://github.com/abdellatif-laghjaj/android-all-in-one-video-downloader',
         tech: ['JAVA', 'Android', 'Android-dl'],
         isPopular: false,
+    },
+    {
+        id: 10,
+        title: 'Flutter Meals App',
+        description: 'Simple Static Flutter Meals App that fetch static meals data',
+        image: 'https://picsum.photos/200',
+        link: 'https://github.com/abdellatif-laghjaj/flutter_meals_app',
+        preview: 'https://github.com/abdellatif-laghjaj/flutter_meals_app',
+        tech: ['DART', 'Flutter'],
+        isPopular: false,
     }
 ];
