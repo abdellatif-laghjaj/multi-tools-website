@@ -7,7 +7,7 @@ const PROJECTS_DATA = [
         description: 'Simple URL Shortener that allows you to shorten your URL and get a short link.',
         image: 'assets/test_image.svg',
         link: 'https://github.com/abdellatif-laghjaj/url-shortener',
-        preview: domainName + 'url-shortener/',
+        preview: 'url-shortener/',
         tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL', 'NodeJS', 'ExpressJS'],
         isPopular: true,
     },
