@@ -67,6 +67,7 @@ if ($(window).width() < 900) {
                 $('header nav ul .theme-icon').css('color', '#fff');
                 $('.menu-icon .menu-icon-fixed').css('color', '#fff');
             }
+            
             $('header').css('background-color', 'rgba(0,0,0,0.96)');
             $('header').css('border-radius', '0px');
             $('header').css('box-shadow', 'none');
