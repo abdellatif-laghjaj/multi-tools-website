@@ -8,7 +8,7 @@ const PROJECTS_DATA = [
         image: 'assets/test_image.svg',
         link: 'https://github.com/abdellatif-laghjaj/url-shortener',
         preview: 'url-shortener/',
-        tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL', 'NodeJS', 'ExpressJS'],
+        tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL', 'NodeJS'],
         isPopular: true,
     },
     {
