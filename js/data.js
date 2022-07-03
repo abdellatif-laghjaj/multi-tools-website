@@ -57,7 +57,7 @@ const PROJECTS_DATA = [
         description: 'Simple and clean Portfolio for my personal projects.',
         image: 'assets/portfolio.png',
         link: 'https://github.com/abdellatif-laghjaj/portfolio',
-        preview: domainName + 'portfolio/',
+        preview: 'https://abdellatif-laghjaj.github.io/portfolio/',
         tech: ['HTML', 'CSS', 'JS'],
         isPopular: true,
     },
