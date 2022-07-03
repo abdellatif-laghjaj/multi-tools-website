@@ -1,4 +1,4 @@
-const domainName = 'https://abdellatif-laghjaj.000webhostapp.com/';
+const domainName = 'https://abdellatiflaghjaj.000webhostapp.com/';
 
 const PROJECTS_DATA = [
     {
