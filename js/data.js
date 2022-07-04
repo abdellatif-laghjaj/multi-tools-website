@@ -99,5 +99,15 @@ const PROJECTS_DATA = [
         preview: 'https://github.com/abdellatif-laghjaj/flutter_meals_app',
         tech: ['DART', 'Flutter'],
         isPopular: false,
+    },
+    {
+        id: 11,
+        title: 'Todo List',
+        description: 'Simple Todo List that allows you to save and edit your todos.',
+        image: 'assets/todo_list_web_app.png',
+        link: 'https://github.com/abdellatif-laghjaj/todo-list',
+        preview: domainName + 'todo-list/',
+        tech: ['HTML', 'CSS', 'JS', 'DaisyUI'],
+        isPopular: true,
     }
 ];
