@@ -1,6 +1,16 @@
-const domainName = 'https://abdellatiflaghjaj.000webhostapp.com/';
+const domainName = 'http://abdellatif-laghjaj.ml/';
 
 const PROJECTS_DATA = [
+    {
+        id: 11,
+        title: 'Todo List',
+        description: 'Simple Todo List that allows you to save and edit your todos.',
+        image: 'assets/todo_list_web_app.png',
+        link: 'https://github.com/abdellatif-laghjaj/todo-list',
+        preview: domainName + 'todo-list/',
+        tech: ['HTML', 'CSS', 'JS', 'DaisyUI'],
+        isPopular: true,
+    },
     {
         id: 1,
         title: 'URL Shortener',
@@ -100,14 +110,4 @@ const PROJECTS_DATA = [
         tech: ['DART', 'Flutter'],
         isPopular: false,
     },
-    {
-        id: 11,
-        title: 'Todo List',
-        description: 'Simple Todo List that allows you to save and edit your todos.',
-        image: 'assets/todo_list_web_app.png',
-        link: 'https://github.com/abdellatif-laghjaj/todo-list',
-        preview: domainName + 'todo-list/',
-        tech: ['HTML', 'CSS', 'JS', 'DaisyUI'],
-        isPopular: true,
-    }
 ];
