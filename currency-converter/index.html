@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="halloween">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme_and_copyright.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Favicon -->
+    <link rel="icon" href="res/favicon.svg">
+
+    <title>Currency Converter | By Abdellatif Laghjaj</title>
+</head>
+
+<body>
+
+    <!-- Copyright -->
+    <div class="author-text">
+        <p>Made with ❤️
+            by <a href="https://github.com/abdellatif-laghjaj" target="_blank">
+                <b>Abdellatif Laghjaj</b>
+            </a>
+        </p>
+    </div>
+
+    <div class="container mt-2">
+        <header class="mb-4">
+            <h1 class="text-2xl font-bold m-4 text-center">Currency Converter</h1>
+        </header>
+
+        <div class="alert-message w-full mb-3"></div>
+
+        <div class="main-content">
+            <input type="text" placeholder="Enter the amount to convert . . ."
+                class="input input-bordered input-primary w-full max-w-xs amount-input" />
+            <div class="currecny-menus">
+                <p class="my-3 text-xl">From</p>
+                <select class="select select-primary w-full max-w-xs from-dropdown">
+                    <option disabled>Select a currency</option>
+                </select>
+
+                <p class="my-3 text-xl">To</p>
+                <select class="select select-primary w-full max-w-xs to-dropdown">
+                    <option disabled>Select a currency</option>
+                </select>
+
+                <button class="btn btn-primary w-full mt-4 convert-btn">Convert</button>
+
+                <div class="output mb-1">
+                    <div class="alert alert-success shadow-lg mt-4 flex justify-center">
+                        <div>
+                            <span>
+                                <p class="text-xl font-bold input-value">1.00</p>
+                                <p class="text-sm input-currency">USD</p>
+                            </span>
+                            <i class='bx bxs-right-arrow bx-sm mx-6'></i>
+                            <span>
+                                <p class="text-xl font-bold output-value">9.78</p>
+                                <p class="text-sm output-currency">MAD</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Theme switcher-->
+    <div class="theme-switcher">
+        <div class="dropdown dropdown-left">
+            <label tabindex="0" class="btn m-1">
+                <i class='bx bxs-palette bx-sm'></i>
+            </label>
+            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li class="theme-item" theme="cupcake"><a>cupcake</a></li>
+                <li class="theme-item" theme="dark"><a>dark</a></li>
+                <li class="theme-item" theme="light"><a>light</a></li>
+                <li class="theme-item" theme="bumblebee"><a>bumblebee</a></li>
+                <li class="theme-item" theme="synthwave"><a>synthwave</a></li>
+                <li class="theme-item" theme="halloween"><a>halloween</a></li>
+                <li class="theme-item" theme="fantasy"><a>fantasy</a></li>
+                <li class="theme-item" theme="dracula"><a>dracula</a></li>
+                <li class="theme-item" theme="aqua"><a>aqua</a></li>
+                <li class="theme-item" theme="luxury"><a>luxury</a></li>
+                <li class="theme-item" theme="night"><a>night</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/countries_list.js"></script>
+    <script src="js/theme_switcher.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -22,6 +22,16 @@ const PROJECTS_DATA = [
         isPopular: true,
     },
     {
+        id: 13,
+        title: 'Currency Converter',
+        description: 'Simple Currency Converter that allows you to convert any currency.',
+        image: 'assets/currency_converter.png',
+        link: 'https://github.com/abdellatif-laghjaj/currency-converter',
+        preview: domainName + 'currency-converter/',
+        tech: ['HTML', 'CSS', 'JS', 'DaisyUI'],
+        isPopular: true,
+    },
+    {
         id: 1,
         title: 'URL Shortener',
         description: 'Simple URL Shortener that allows you to shorten your URL and get a short link.',
