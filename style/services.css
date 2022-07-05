@@ -56,3 +56,30 @@
 .service-card:hover{
     background: var(--secondary-color);
 }
+
+
+@media only screen and (max-width: 1094px){
+    #services .services-container{
+        flex-direction: column;
+    }
+
+    .services-container .service-card{
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width: 396px){
+    #services .services-container .service-card img{
+        width: 100px;
+    }
+
+    #services .services-container .service-card h4{
+        font-size: 19px;
+    }
+
+    #services .services-container .service-card p{
+        font-size: 16px;
+    }
+}
