@@ -1,0 +1,39 @@
+#services{
+    padding: 0;
+}
+
+#services .services-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 12px auto;
+}
+
+.services-container .service-card{
+    position: relative;
+    width: 50%;
+    margin: 0 12px;
+    padding: 12px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: var(--text-color);
+}
+
+.service-card img{
+    width: 140px;
+    display: block;
+    margin: 22px auto;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.service-card h4{
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+}

@@ -5,21 +5,21 @@
     padding: 0;
 }
 
-#about h3, #projects h3, #contact h3 {
+#about h3, #projects h3, #contact h3, #services h3 {
     font-size: 40px;
     font-weight: bold;
     margin: 0;
     margin-left: 14px;
 }
 
-#about h3::after, #projects h3::after, #contact h3::after {
+#about h3::after, #projects h3::after, #contact h3::after, #services h3::after {
     content: '';
     border-bottom: 3px solid var(--text-color);
     width: 50px;
     display: block;
 }
 
-#about h3 span, #projects h3 span, #contact h3 span {
+#about h3 span, #projects h3 span, #contact h3 span ,#services h3 span {
     color: var(--secondary-color);
     font-size: 40px;
 }

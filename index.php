@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/intro.css">
     <link rel="stylesheet" href="style/theme_popup.css">
     <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/services.css">
     <link rel="stylesheet" href="style/projects.css">
     <link rel="stylesheet" href="style/contact.css">
     <!-- Feather icons -->
@@ -107,6 +108,9 @@
 
     <!-- about -->
     <?php include 'components/about.html'; ?>
+
+    <!-- Services -->
+    <?php include 'components/services.html'; ?>
 
     <!-- projects -->
     <?php include 'components/projects.html'; ?>
