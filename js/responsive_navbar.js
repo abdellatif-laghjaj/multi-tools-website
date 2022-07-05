@@ -31,6 +31,6 @@ navBar.querySelectorAll('ul li').forEach(li => {
 });
 
 //check if window is on mobile
-if (window.innerWidth < 668) {
+if (window.innerWidth < 780) {
   navBar.querySelector('.theme-icon').classList.toggle('mobile-nav');
 }

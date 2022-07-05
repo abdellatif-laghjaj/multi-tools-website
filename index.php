@@ -43,6 +43,9 @@
                         <a href="#about">About</a>
                     </li>
                     <li class="nav-link">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="nav-link">
                         <a href="#projects">Projects</a>
                     </li>
                     <li class="nav-link">
