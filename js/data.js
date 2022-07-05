@@ -12,6 +12,16 @@ const PROJECTS_DATA = [
         isPopular: true,
     },
     {
+        id: 12,
+        title: 'Anime Random Quotes',
+        description: 'Simple Anime Random Quotes that allows you to get a random quote from any anime.',
+        image: 'assets/anime_random_quote_generator.png',
+        link: 'https://github.com/abdellatif-laghjaj/anime-random-quotes-generator',
+        preview: domainName + 'anime-random-quotes-generator/',
+        tech: ['HTML', 'CSS', 'JS', 'DaisyUI'],
+        isPopular: true,
+    },
+    {
         id: 1,
         title: 'URL Shortener',
         description: 'Simple URL Shortener that allows you to shorten your URL and get a short link.',
