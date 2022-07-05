@@ -33,7 +33,14 @@
 }
 
 .service-card h4{
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
+    padding: 8px;
+}
+
+
+.service-card p{
+    font-size: 18px;
+    text-align: justify;
     padding: 8px;
 }

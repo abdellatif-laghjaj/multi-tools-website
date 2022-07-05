@@ -131,6 +131,7 @@
     <script src="js/data.js"></script>
     <script src="js/fecth_projetcs_items.js"></script>
     <script src="js/fetch_swiper_items.js"></script>
+    <script src="js/fetch_services_items.js"></script>
     <script src="js/theme_script.js"></script>
     <script src="js/useful_functions.js"></script>
     <script src="js/responsive_navbar.js"></script>

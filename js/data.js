@@ -111,3 +111,25 @@ const PROJECTS_DATA = [
         isPopular: false,
     },
 ];
+
+
+const SERVICES_DATA = [
+    {
+        id: 1,
+        title: 'Web Development',
+        description: 'I am a web developer, I can build your website from scratch or I can help you to update your website.',
+        image: 'assets/service_1.png',
+    },
+    {
+        id: 2,
+        title: 'Mobile Development',
+        description: 'I am a mobile developer, I can build your mobile app from scratch or I can help you to update your mobile app.',
+        image: 'assets/service_2.png',
+    },
+    {
+        id: 3,
+        title: 'Desktop Development',
+        description: 'I am a desktop developer, I can build your desktop app from scratch or I can help you to update your desktop app.',
+        image: 'assets/service_3.png',
+    }
+];
