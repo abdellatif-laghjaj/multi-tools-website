@@ -1,5 +1,6 @@
 #services{
     padding: 0;
+    margin: 0 20px;
 }
 
 #services .services-container{
@@ -22,6 +23,9 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     color: var(--text-color);
+    user-select: none;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 .service-card img{
@@ -43,4 +47,12 @@
     font-size: 18px;
     text-align: justify;
     padding: 8px;
+}
+
+.service-card:hover img{
+    transform: scale(1.1);
+}
+
+.service-card:hover{
+    background: var(--secondary-color);
 }
