@@ -48,10 +48,28 @@ body, html{
 }
 
 body {
+  position: relative;
   background: var(--bg-color);
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
   overflow-x: hidden;
+}
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-color);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.active{
+  display: flex;
 }
 
 #intro {

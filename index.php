@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,11 +21,16 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
     <title>Abdellatif Laghjaj | Personal Portfolio</title>
 </head>
 
 <body>
+    <div class="loader">
+        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_VRHN4h.json"  background="transparent"  speed="1"  style="width: 240px; height: 240px;"  loop autoplay>
+        </lottie-player>
+    </div>
     <!-- Header -->
     <section class="intro" id="intro">
 
@@ -146,6 +151,16 @@
                 }
             });
         }
+
+        //for loader
+        const loader = document.querySelector('.loader');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loader.classList.add('active');
+            setTimeout(() => {
+                loader.classList.remove('active');
+            }, 1000);
+        });
     </script>
     <script src="js/data.js"></script>
     <script src="js/fecth_projetcs_items.js"></script>
@@ -157,4 +172,3 @@
 </body>
 
 </html>
-    
