@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>Abdellatif Laghjaj | Personal Portfolio</title>
 </head>
 
@@ -151,16 +151,17 @@
                 }
             });
         }
-
+        
         //for loader
         const loader = document.querySelector('.loader');
-        //wait 3 seconds before removing the loader
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                loader.style.display = 'none';
-                $('.loader').fadeOut(500);
-            }, 4000);
-        });
+        loader.style.display = 'none';
+        // //wait 3 seconds before removing the loader
+        // window.addEventListener('load', function() {
+        //     setTimeout(function() {
+        //         loader.style.display = 'none';
+        //         $('.loader').fadeOut(500);
+        //     }, 4000);
+        // });
     </script>
     <script src="js/data.js"></script>
     <script src="js/fecth_projetcs_items.js"></script>
@@ -169,6 +170,7 @@
     <script src="js/theme_script.js"></script>
     <script src="js/useful_functions.js"></script>
     <script src="js/responsive_navbar.js"></script>
+    <script src="js/animation.js"></script>
 </body>
 
 </html>
