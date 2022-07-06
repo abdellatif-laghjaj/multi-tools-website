@@ -62,10 +62,10 @@ function setDefaultValues() {
     from_currency.value = 'USD';
     to_currency.value = 'MAD';
     amount_input.value = '1';
-    input_value.innerHTML = '1';
-    input_currency.innerHTML = 'USD';
-    output_value.innerHTML = calculateConversion(from_currency.value, to_currency.value, amount_input.value);
-    output_currency.innerHTML = 'EUR';
+    input_value.innerHTML = '...';
+    input_currency.innerHTML = 'N/A';
+    output_value.innerHTML = '...'
+    output_currency.innerHTML = 'N/A';
 }
 
 
