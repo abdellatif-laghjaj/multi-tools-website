@@ -92,3 +92,21 @@ ScrollReveal().reveal('.submit-btn', {
     delay: 500,
     easing: 'ease-in-out'
 });
+
+ScrollReveal().reveal('.contact-info-text', {
+    duration: 2000,
+    origin: 'right',
+    distance: '300px',
+    delay: 100,
+    easing: 'ease-in-out'
+});
+
+for (let i = 0; i < 10; i++) {
+    ScrollReveal().reveal(`.ci${i+1}`, {
+        duration: 2000,
+        origin: 'right',
+        distance: '300px',
+        delay: (1 + i) * 100,
+        easing: 'ease-in-out'
+    });
+}
