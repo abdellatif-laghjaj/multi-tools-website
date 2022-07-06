@@ -159,7 +159,7 @@
             loader.classList.add('active');
             setTimeout(() => {
                 loader.classList.remove('active');
-            }, 1000);
+            }, 3000);
         });
     </script>
     <script src="js/data.js"></script>
