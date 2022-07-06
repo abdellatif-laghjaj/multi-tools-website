@@ -3,23 +3,33 @@ const navBar = document.querySelector('nav'),
   menuIcon = document.querySelector('.menu-icon');
 
 
-menuButton.addEventListener('click', () => {
-  navBar.classList.toggle('mobile-nav');
-  //add class to elements inside navbar
-  navBar.querySelector('ul').classList.toggle('mobile-nav');
-  //change data-feather attribute of menu-icon from grid to x
-  menuButton.childNodes[0].setAttribute('data-feather', 'x');
+var isMenuClicked = false;
 
-  //check if the mobile navbar is open
-  if (navBar.classList.contains('mobile-nav')) {
-    //change data-feather attribute of menu-icon from x to grid
-    menuButton.childNodes[0].setAttribute('data-feather', 'grid');
-    //change color of menu-icon to white
-    menuButton.style.color = '#fff';
-    navBar.querySelectorAll('ul li a').forEach(element => {
-      element.style.color = '#fff';
-    });
+menuButton.addEventListener('click', () => {
+  if (isMenuClicked) {
+    navBar.classList.toggle('mobile-nav');
+    //add class to elements inside navbar
+    navBar.querySelector('ul').classList.toggle('mobile-nav');
+    //change data-feather attribute of menu-icon from grid to x
+    menuButton.childNodes[0].setAttribute('data-feather', 'x');
+
+    //check if the mobile navbar is open
+    if (navBar.classList.contains('mobile-nav')) {
+      //change data-feather attribute of menu-icon from x to grid
+      menuButton.childNodes[0].setAttribute('data-feather', 'grid');
+      //change color of menu-icon to white
+      menuButton.style.color = '#fff';
+      navBar.querySelectorAll('ul li a').forEach(element => {
+        element.style.color = '#fff';
+      });
+    }
+    isMenuClicked = false;
+  } else {
+    $('.menu-icon-fixed').css('color', '#000');
+    isMenuClicked = true;
   }
+
+  console.log('mobile navbar is open');
 });
 
 navBar.querySelectorAll('ul li').forEach(li => {

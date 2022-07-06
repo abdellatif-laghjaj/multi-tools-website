@@ -131,12 +131,30 @@
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
 
     <!-- JS -->
+    <script>
+        //check if bg-color is white or black
+        if(document.documentElement.style.getPropertyValue('--bg-color') == '#F6FBF4') {
+            window.addEventListener('scroll', function() {
+                if(window.scrollY <= 40) {
+                    $('header .logo').css('color', '#000');
+                    $('header nav ul li a').css('color', '#000');
+                    $('header nav ul li .theme-icon').css('color', '#000');
+                } else {
+                    $('header .logo').css('color', '#fff');
+                    $('header nav ul li a').css('color', '#fff');
+                    $('header nav ul li .theme-icon').css('color', '#fff');
+                }
+            });
+        }
+    </script>
     <script src="js/data.js"></script>
     <script src="js/fecth_projetcs_items.js"></script>
     <script src="js/fetch_swiper_items.js"></script>
     <script src="js/fetch_services_items.js"></script>
     <script src="js/theme_script.js"></script>
-    <script src="js/responsive_navbar.js"></script>
     <script src="js/useful_functions.js"></script>
+    <script src="js/responsive_navbar.js"></script>
 </body>
+
 </html>
+    
