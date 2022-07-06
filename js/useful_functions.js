@@ -51,44 +51,11 @@ function getCurrentYear() {
 
 copyrightYear.innerHTML = getCurrentYear();
 
-
-//change the background color of the navbar when user scroll  80px down
-
-
-//check if width of the window is less than 900px
-if ($(window).width() < 900) {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 40) {
-            $('header').css('background-color', 'rgba(0,0,0,0.96)');
-            $('header').css('border-radius', '0px');
-            $('header').css('box-shadow', 'none');
-            $('header').css('backdrop-filter', 'blur(0px)');
-            $('header').css('-webkit-backdrop-filter', 'blur(0px)');
-            $('header').css('border', 'none');
-        }else {
-            $('header').css('background-color', 'rgba(0,0,0,0.96)');
-            $('header').css('box-shadow', '0 8px 32px 0 rgba(31, 38, 135, 0.37)');
-            $('header').css('backdrop-filter', 'blur(0px)');
-            $('header').css('-webkit-backdrop-filter', 'blur(0px)');
-            $('header').css('border', '1px solid rgba(255, 255, 255, 0.18)');
-        }
-    });
-}else {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 80) {
-            $('header').css('background-color', 'rgba(0,0,0,0.9)');
-            $('header').css('border-radius', '0px');
-            $('header').css('box-shadow', 'none');
-            $('header').css('backdrop-filter', 'blur(0px)');
-            $('header').css('-webkit-backdrop-filter', 'blur(0px)');
-            $('header').css('border', 'none');
-        }else {
-            $('header').css('background-color', 'rgba(0,0,0,0.9)');
-            $('header').css('box-shadow', '0 8px 32px 0 rgba(31, 38, 135, 0.37)');
-            $('header').css('backdrop-filter', 'blur(0px)');
-            $('header').css('border-radius', '999px');
-            $('header').css('-webkit-backdrop-filter', 'blur(0px)');
-            $('header').css('border', '1px solid rgba(255, 255, 255, 0.18)');
-        }
-    });
+if (window.scrollY <= 40) {
+    $("header").css("background-color", "rgba(0,0,0,0.5)");
 }
+
+window.addEventListener('scroll', function () {
+    $("header").css("background-color", "rgba(0,0,0,0.5)");
+});
+
