@@ -154,12 +154,12 @@
 
         //for loader
         const loader = document.querySelector('.loader');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            loader.classList.add('active');
-            setTimeout(() => {
-                loader.classList.remove('active');
-            }, 3000);
+        //wait 3 seconds before removing the loader
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                loader.style.display = 'none';
+                $('.loader').fadeOut(500);
+            }, 4000);
         });
     </script>
     <script src="js/data.js"></script>

@@ -63,13 +63,9 @@ body {
   height: 100vh;
   background: var(--bg-color);
   z-index: 9999;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.loader.active{
-  display: flex;
 }
 
 #intro {
