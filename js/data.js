@@ -1,4 +1,4 @@
-const domainName = 'http://abdellatif-laghjaj.ml/';
+const domainName = 'http://abdellatif-laghjaj.ml/projects/';
 
 const PROJECTS_DATA = [
     {
@@ -37,7 +37,7 @@ const PROJECTS_DATA = [
         description: 'Simple URL Shortener that allows you to shorten your URL and get a short link.',
         image: 'assets/url_shortener.png',
         link: 'https://github.com/abdellatif-laghjaj/url-shortener',
-        preview: 'url-shortener/',
+        preview: domainName + 'url-shortener/',
         tech: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL', 'NodeJS'],
         isPopular: true,
     },
