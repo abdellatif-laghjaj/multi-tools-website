@@ -9,12 +9,12 @@
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <!-- Css -->
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/intro.css">
+    <!-- <link rel="stylesheet" href="style/intro.css">
     <link rel="stylesheet" href="style/theme_popup.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/services.css">
     <link rel="stylesheet" href="style/projects.css">
-    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/contact.css"> -->
     <!-- Feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
